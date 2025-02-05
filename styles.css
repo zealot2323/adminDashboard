@@ -1,0 +1,233 @@
+ @font-face {
+    font-family: 'fira_sansbook';
+    src: url('fonts/firasans-book-webfont.woff2') format('woff2'),
+         url('fonts/firasans-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+
+* {
+    font-family: 'fira_sansbook', sans-serif;
+}
+
+ul, li, body, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 325px 4fr;
+    grid-template-rows: 200px 4fr 100px;
+}
+
+.header {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    display: grid;
+    box-shadow: 0px 2px 3px rgb(78, 76, 76);
+}
+
+.top { 
+    display: grid;
+    grid-template-columns: .5fr 5fr .25fr .25fr .25fr;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+    justify-items: end;
+}
+
+.search {
+    width: 600px;
+    height: 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(237, 241, 243);
+    justify-self: start;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: .75fr 3fr 125px 125px 125px;
+    gap: 5px;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+.small {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: lightpink;
+}
+
+.bigIcon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-self: end;
+}
+
+.greeting {
+    justify-self: start;
+}
+
+.buttons {
+    background-color: rgb(32, 134, 178);
+    border-radius: 40px;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 125px 300px 200px;
+    gap: 25px;
+    background-color: rgb(32, 134, 178);
+    padding-left: 30px;
+}
+
+.logo, .nav > li, .settings > li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo > span {
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+.nav > li, .settings > li {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.content {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 4fr 1.25fr;
+    grid-template-rows: 50px 400px 50px 1fr 50px;
+    gap: 20px;
+    padding: 0px 25px;
+    background-color: rgb(237, 241, 243);
+}
+
+.announcements {
+    grid-row: 2 / 3;
+    grid-column: 2 / -1;
+    background-color: white;
+    padding: 0px 25px;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px lightgray;
+}
+
+.trendingSection {
+    grid-row: 4 / 5;
+    grid-column: 2 / -1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px lightgray;
+    display: grid;
+    gap: 5px; 
+    padding: 5px 25px; 
+}
+
+h3 {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.announcement > p {
+    font-size: .85em;
+}
+
+.announcement {
+    align-content: center;
+}
+
+.announcement:not(:last-child) {
+    border-bottom: 1px solid lightgray;
+}
+
+.trending {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.trending > span > p {
+    font-size: .85em;
+}
+
+.trending > span > p:nth-child(odd) {
+    font-weight: bold;
+}
+
+.projectIcon, #search, #notification {
+    width: 25px;
+    height: 25px;
+}
+
+.projects {
+    grid-row: 2 / 5;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project { 
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px lightgray;
+    box-shadow: inset 10px 0px 0px -2px rgb(255, 192, 2);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    justify-content: space-between;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.icons {
+    align-self: flex-end;
+    display: flex;
+    justify-content: flex-end; 
+    gap: 25px;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.icons > img {
+  width: 25px;
+  height:25px 
+}
+
+
+
+#logo {
+    width: 45px;
+    height: 45px;
+}
